@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../app/styles/Home.module.css'
+import DefaultLayout from '../app/components/layouts/Default'
 
 const PageHead: NextPage = () => {
   return (
@@ -14,9 +14,9 @@ const PageHead: NextPage = () => {
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <DefaultLayout>
       <PageHead />
-    </div>
+    </DefaultLayout>
   )
 }
 

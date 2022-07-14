@@ -14,3 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl text-dark-color-1; 
+  }
+}
+
+@layer components {
+  .default-layout {
+    @apply bg-dark-bg-color-1;
+  }
+}
+
+@layer utilities {
+}
