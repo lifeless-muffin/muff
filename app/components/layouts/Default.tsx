@@ -1,7 +1,21 @@
 import React from 'react'
+import Header from '../modules/header/Header.layout'
 
-export default function Default(props: any) {
+type Props = {
+  children: React.ReactNode
+}
+
+const Default = ({ children }: Props) => {
   return (
-    <h1>something</h1>
+    <div>
+      <Header />
+      <div className="layout-children">
+        lkjadsflkajslkfdjlksdflkajslk
+        {children}
+      </div>
+    </div>
   )
 }
+
+
+export default Default;

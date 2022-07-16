@@ -1,11 +1,9 @@
-:root {
-    font-size: 16px;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-  }
-  
+* {
+  @apply relative box-border 
+    text-[16px] m-0 p-0;
+}
+
+html, body {
+  @apply bg-dark-color-1 
+    w-[100%] h-[100%];
+}

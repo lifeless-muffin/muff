@@ -1,0 +1,47 @@
+.header-topbar {
+  @apply content-none left-0 right-0 h-[4px] absolute top-[0] bg-gradient-to-r from-yellow-color-1 via-pink-color-1 to-blue-color-1;
+}
+
+.header-module {
+  @apply sticky top-0 left-0 right-0 flex items-center justify-center w-[100%] h-[69px] p-[4px] backdrop-blur-xl bg-dark-color-1 border-b-gray-color-1 border-solid border-b-[1px];
+
+  @screen md {
+    @apply h-[79px] p-[4px];
+  }
+}
+
+.header-module-content {
+  @apply flex justify-between items-center w-[96%] h-[100%];
+}
+
+.navbar-links-list {
+  @apply w-fit h-fit flex items-center justify-center gap-x-12;
+}
+
+.navbar-list-item {
+  @apply list-none flex items-center justify-center w-fit h-fit;
+}
+
+.navbar-link {
+  @apply w-fit h-fit cursor-pointer rounded-md overflow-hidden;
+
+  :hover {
+    @apply opacity-75;
+  }
+}
+
+.navbar-link-active {
+  @apply px-4 py-[6px] bg-gray-color-2;
+}
+
+.navbar-link-text {
+  @apply text-white-color-1 text-nokiaSm text-center font-medium;
+
+  @screen lg {
+    @apply text-desktopXsm
+  }
+
+  @screen md {
+    @apply text-tabletXsm;
+  }
+}

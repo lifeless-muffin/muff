@@ -8,6 +8,21 @@
 @tailwind components;
 /* Stop purging. */
 
+/* Write your own custom base styles here */
+/* importing templates and layouts styles */
+@import '../components/layouts/default';
+@import '../components/templates/home/home';
+@import '../components/templates/projects/projects';
+
+/* importing modules styles */
+@import '../components/modules/footer/footer';
+@import '../components/modules/header/header';
+@import '../components/modules/heroSection/heroSection';
+
+/* importing elements styles */
+@import '../components/elements/icons/iconRenderer';
+
+@import './_typography.scss';
 
 /* Start purging... */
 @tailwind utilities;

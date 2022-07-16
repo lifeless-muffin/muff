@@ -1,5 +1,16 @@
 h1 {
 	@apply font-jost text-start text-white-color-1 w-[100%]
-		font-bold lg:text-desktopXl lg:leading-8 md:text-tabletXl md:leading-7
-		sm:text-mobileLg sm:leading-6 text-nokiaLg leading-5; 
+		font-bold text-nokiaLg leading-5; 
+
+	@screen sm {
+		@apply text-mobileLg leading-6;
+	}
+
+	@screen md {
+		@apply text-tabletXl leading-7
+	}
+
+	@screen lg {
+		@apply text-desktopXl leading-8;
+	}
 }  

@@ -1,0 +1,69 @@
+@tailwind base;
+/* Write your own custom base styles here */
+* {
+  @apply relative box-border 
+    text-[16px] m-0 p-0;
+}
+
+html, body {
+  @apply bg-dark-color-1 
+    w-[100%] h-[100%];
+}
+
+h1 {
+  @apply font-jost text-start text-white-color-1 w-[100%]
+		font-bold text-nokiaLg leading-5;
+}
+
+@screen sm {
+  h1 {
+    @apply text-mobileLg leading-6;
+  }
+}
+
+@screen md {
+  h1 {
+    @apply text-tabletXl leading-7;
+  }
+}
+
+@screen lg {
+  h1 {
+    @apply text-desktopXl leading-8;
+  }
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+/* Write your own custom base styles here */
+/* importing templates and layouts styles */
+/* importing modules styles */
+/* importing elements styles */
+h1 {
+  @apply font-jost text-start text-white-color-1 w-[100%]
+		font-bold text-nokiaLg leading-5;
+}
+
+@screen sm {
+  h1 {
+    @apply text-mobileLg leading-6;
+  }
+}
+
+@screen md {
+  h1 {
+    @apply text-tabletXl leading-7;
+  }
+}
+
+@screen lg {
+  h1 {
+    @apply text-desktopXl leading-8;
+  }
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+/*# sourceMappingURL=main.css.map */

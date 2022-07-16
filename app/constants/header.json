@@ -1,0 +1,20 @@
+{
+  "navbar-list": [
+    {
+      "text": "Home",
+      "to": "/"
+    },
+    {
+      "text": "Projects",
+      "to": "/projects"
+    },
+    {
+      "text": "Blog",
+      "to": "/blog"
+    },
+    {
+      "text": "About",
+      "to": "/about"
+    }
+  ]
+}

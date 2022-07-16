@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "AAAA,SAAS,CAAT,IAAS;AAET,4CAA4C;ACF5C,AAAA,CAAC,CAAC;EACA,MAAM,CAAN;uBAAM;CAEP;;AAED,AAAA,IAAI,EAAE,IAAI,CAAC;EACT,MAAM,CAAN;qBAAM;CAEP;;ACRD,AAAA,EAAE,CAAC;EACF,MAAM,CAAN;kCAAM;CAcN;;AAXA,OAAO,CAAP,EAAO;EAJR,AAAA,EAAE,CAAF;IAKE,MAAM,CAAN,uBAAM;GAUP;;;AAPA,OAAO,CAAP,EAAO;EARR,AAAA,EAAE,CAAF;IASE,MAAM,CAAN,uBAAM;GAMP;;;AAHA,OAAO,CAAP,EAAO;EAZR,AAAA,EAAE,CAAF;IAaE,MAAM,CAAN,wBAAM;GAEP;;;AFTD,sBAAsB;AACtB,SAAS,CAAT,UAAS;AACT,mBAAmB;AAEnB,4CAA4C;AAC5C,4CAA4C;AAK5C,8BAA8B;AAK9B,+BAA+B;AErB/B,AAAA,EAAE,CAAC;EACF,MAAM,CAAN;kCAAM;CAcN;;AAXA,OAAO,CAAP,EAAO;EAJR,AAAA,EAAE,CAAF;IAKE,MAAM,CAAN,uBAAM;GAUP;;;AAPA,OAAO,CAAP,EAAO;EARR,AAAA,EAAE,CAAF;IASE,MAAM,CAAN,uBAAM;GAMP;;;AAHA,OAAO,CAAP,EAAO;EAZR,AAAA,EAAE,CAAF;IAaE,MAAM,CAAN,wBAAM;GAEP;;;AFWD,sBAAsB;AACtB,SAAS,CAAT,SAAS;AACT,mBAAmB",
+    "sources": [
+        "main.scss",
+        "_base.scss",
+        "_typography.scss",
+        "../components/layouts/_default.scss",
+        "../components/templates/home/_home.scss",
+        "../components/templates/projects/_projects.scss",
+        "../components/modules/footer/_footer.scss",
+        "../components/modules/header/_header.scss",
+        "../components/modules/heroSection/_heroSection.scss",
+        "../components/elements/icons/_iconRenderer.scss",
+        "_typography.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
