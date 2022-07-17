@@ -1,9 +1,14 @@
 .header-topbar {
-  @apply content-none left-0 right-0 h-[4px] absolute top-[0] bg-gradient-to-r from-yellow-color-1 via-pink-color-1 to-blue-color-1;
+  @apply content-none left-0 right-0 h-[4px] absolute top-[0] 
+    bg-gradient-to-r from-yellow-color-1 via-pink-color-1 to-blue-color-1;
 }
 
 .header-module {
-  @apply sticky top-0 left-0 right-0 flex items-center justify-center w-[100%] h-[69px] p-[4px] backdrop-blur-xl bg-dark-color-1 border-b-gray-color-1 border-solid border-b-[1px];
+  @apply fixed top-0 left-0 right-0 flex items-center justify-center 
+    w-[100%] h-[69px] p-[4px] border-b-gray-color-1 bg-dark-color-1
+    border-solid border-b-[1px] bg-blend-overlay z-50 flex-nowrap place-content-stretch bg-opacity-80;
+
+  backdrop-filter: blur(24px);
 
   @screen md {
     @apply h-[79px] p-[4px];
@@ -16,6 +21,10 @@
 
 .navbar-links-list {
   @apply w-fit h-fit flex items-center justify-center gap-x-12;
+
+  @media screen and (max-width: 766px) {
+    @apply gap-x-8;
+  }
 }
 
 .navbar-list-item {
@@ -44,4 +53,16 @@
   @screen md {
     @apply text-tabletXsm;
   }
+}
+
+.mobile-navbar-btn-wrapper, .mobile-navbar-btn {
+  @apply flex items-center justify-center;
+}
+
+.mobile-navbar-btn {
+ @apply w-fit h-fit p-2 rounded-[50%] cursor-pointer bg-gray-color-1 bg-opacity-0;
+}
+
+.mobile-navbar-btn:hover {
+  @apply bg-opacity-100;
 }
