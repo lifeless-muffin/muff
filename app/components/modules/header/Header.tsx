@@ -29,13 +29,12 @@ const NavbarLinkElement = ({to, text, currentPath}: NavbarLinkProps) => (
 
 const NavbarSection = (NavbarProps: any) => {
   
-  const {isMobile, navbarState, setNavbarState} = NavbarProps
   const router = useRouter();
   const currentPath = router.pathname;
 
   const renderList = () => {
     return (
-      <ul className={`navbar-links-list list-none${isMobile ? ' mobile-navbar-list' : ''}`}>
+      <ul className="navbar-links-list list-none">
         {headerData['navbar-list'].map((listItem, index) => {
           return (
             <li key={index} className="navbar-list-item">
@@ -53,41 +52,24 @@ const NavbarSection = (NavbarProps: any) => {
 
   return (
     <div className="navbar">
-      {isMobile ? (
-        <div>
-          <div className='mobile-navbar-btn-wrapper'>
-            <button className="mobile-navbar-btn">
-              <IconRenderer 
-                iconSource='/assets/hamburger.svg'
-                iconAlt='Hamburger Menu Button'
-                iconSize={{
-                  width: 28,
-                  height: 28
-                }}
-              />
-            </button>
-          </div>
-
-          <div className={`mobile-navbar-list-wrapper${navbarState ? ' mobile-navbar-active' : ''}`}>
-            {renderList()}
-          </div>
-        </div>
-      ) : renderList()}
+      {renderList()}
     </div>
   )
 }
 
-const LogoSection = (props: any) => (
-  <div className="header-logo">
-    <a className="header-logo-link" href='/'>
-      <IconRenderer
-        iconSource="/assets/logo.svg"
-        iconAlt="Portfolio Site Logo"
-        iconSize={{width: 'auto', height: '34px'}}
-      />
-    </a>
-  </div>
-)
+const LogoSection = (props: any) => {
+  return (
+    <div className="header-logo">
+      <a className="header-logo-link" href='/'>
+        <IconRenderer
+          iconSource={props.isMobile ? `/assets/mobile-logo.svg` : '/assets/logo.svg'}
+          iconAlt="Portfolio Site Logo"
+          iconSize={{width: 'auto', height: props.isMobile ? '26px' : '34px'}}
+        />
+      </a>
+    </div>
+  )
+}
 
 const Header = (props: any) => {
   
@@ -113,7 +95,8 @@ const Header = (props: any) => {
     <header className="header-module">
       <div className="header-topbar"></div>
       <div className="header-module-content">
-        <Header.LogoSection>
+        <Header.LogoSection
+          isMobile={isMobile}>
           <LogoSection />
         </Header.LogoSection>
 

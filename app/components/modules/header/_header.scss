@@ -1,17 +1,25 @@
 .header-topbar {
-  @apply content-none left-0 right-0 h-[4px] absolute top-[0] 
+  @apply content-none left-0 right-0 h-[2px] absolute top-0 
     bg-gradient-to-r from-yellow-color-1 via-pink-color-1 to-blue-color-1;
+
+  @screen md {
+    @apply h-[4px];
+  }
 }
 
 .header-module {
-  @apply fixed top-0 left-0 right-0 flex items-center justify-center 
-    w-[100%] h-[69px] p-[4px] border-b-gray-color-1 bg-dark-color-1
-    border-solid border-b-[1px] bg-blend-overlay z-50 flex-nowrap place-content-stretch bg-opacity-80;
+  @apply fixed bottom-0 left-0 right-0 flex items-center justify-center 
+    w-[100%] h-[62px] pt-[2px] border-b-gray-color-1 bg-dark-color-1
+    border-solid border-b-[1px] bg-blend-overlay z-40 flex-nowrap place-content-stretch bg-opacity-80;
 
   backdrop-filter: blur(24px);
 
+  @screen sm {
+    @apply top-0;
+  }
+
   @screen md {
-    @apply h-[79px] p-[4px];
+    @apply h-[79px];
   }
 }
 
@@ -40,15 +48,14 @@
 }
 
 .navbar-link-active {
-  @apply px-4 py-[6px] bg-gray-color-2;
+  @apply px-[14px] py-[4px] bg-gray-color-2;
+  @screen sm {
+    @apply px-4 py-[6px]
+  }
 }
 
 .navbar-link-text {
-  @apply text-white-color-1 text-nokiaSm text-center font-medium;
-
-  @screen lg {
-    @apply text-desktopXsm
-  }
+  @apply text-white-color-1 text-nokiaXsm text-center font-medium;
 
   @screen md {
     @apply text-tabletXsm;
@@ -66,3 +73,4 @@
 .mobile-navbar-btn:hover {
   @apply bg-opacity-100;
 }
+

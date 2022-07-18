@@ -9,8 +9,7 @@ const Default = ({ children }: Props) => {
   return (
     <div>
       <Header />
-      <div className="layout-children text-[80px]">
-        lkjadsflkajslkfdjlksdflkajslk
+      <div className="default-layout">
         {children}
       </div>
     </div>

@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import DefaultLayout from '../app/components/layouts/Default'
+import HomePage from '../app/components/templates/home/Home'
 
-const PageHead: NextPage = () => {
+const PageHead = () => {
   return (
     <Head>
       <title>Portfolio - HOME</title>
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
   return (
     <DefaultLayout>
       <PageHead />
+      <HomePage />
     </DefaultLayout>
   )
 }
