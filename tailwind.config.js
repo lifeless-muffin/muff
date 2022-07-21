@@ -15,7 +15,8 @@ module.exports = {
     colors: {
       "white-color-1": "#D7D7D7",
       "white-color-2": "#BCBCBC",
-      "white-color-2": "#A9A6A6",
+      "white-color-3": "#A9A6A6",
+      "white-color-4": "rgb(177, 177, 177)",
 
       "dark-color-1": "#101110",
       "dark-color-2": "#131413",
@@ -37,10 +38,10 @@ module.exports = {
     },
 
     fontFamily: {
-      jost: ["Jost", "Josefin Sans", "Times New Roman"],
-      jostHelventica: ["Jost", "Josefin Sans", "Helvetica"],
-      josefin: ["Josefin Sans", "Jost", "Georgia"],
-      inter: ["Inter", "Lato", "Helvetica"]
+      jost: ['Jost', '"Josefin Sans"', '"Times New Roman"'],
+      jostHelventica: ['"Jost"', '"Josefin Sans"', '"Helvetica"'],
+      josefin: ['"Josefin Sans"', '"Jost"', 'Georgia'],
+      inter: ['"Inter"', '"Lato"', '"Helvetica"']
     },
 
     fontSize: {

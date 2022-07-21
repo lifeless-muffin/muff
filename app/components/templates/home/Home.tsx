@@ -1,7 +1,9 @@
+import HeroSection from "../../modules/heroSection/HeroSection";
+
 const HomePage = () => (
-  <div className="home-page-content text-white-color-1 text-desktopXl">
-    this is home page
+  <div className="home-page-content">
+    <HeroSection />
   </div>
 );
 
-export default HomePage;
+export default HomePage; 

@@ -1,16 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Josefin+Sans:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
 h1 {
 	@apply font-jost text-start text-white-color-1 w-[100%]
-		font-bold text-nokiaLg leading-5; 
+		font-extrabold text-nokiaLg leading-5; 
 
 	@screen sm {
-		@apply text-mobileLg leading-6;
+		@apply text-mobileLg leading-8;
 	}
 
 	@screen md {
-		@apply text-tabletXl leading-7
+		@apply text-tabletXl leading-[44px];
 	}
 
 	@screen lg {
-		@apply text-desktopXl leading-8;
+		@apply text-desktopXl leading-[52px];
 	}
 }  
+
+.section-heading > span {
+  @apply font-josefin font-medium text-nokiaMd text-white-color-3;
+
+  @screen md {
+    @apply text-tabletLg;
+  }
+}
+
+.section-heading > h4 {
+  @apply font-josefin font-medium text-nokiaSm text-white-color-3;
+
+  @screen md {
+    @apply text-tabletSm;
+  }
+}
+
+.primary-paragraph-p {
+  @apply font-josefin font-normal text-nokiaSm text-white-color-4 mt-2;
+
+  @screen md {
+    @apply text-desktopXsm;
+  }
+}

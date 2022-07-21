@@ -1,0 +1,11 @@
+.default-layout {
+  @apply w-[100%] h-fit pt-14 flex flex-col items-center justify-center;
+  
+  @screen md {
+    @apply mt-[79px] pt-24;
+  }
+
+  @screen sm {
+    @apply mt-[62px];
+  }
+}
