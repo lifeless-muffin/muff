@@ -1,0 +1,116 @@
+.projects-section {
+  @apply w-[92%] h-fit max-w-3xl flex items-center justify-center flex-col;
+}
+
+.projects-list {
+  @apply w-[100%] h-fit flex flex-col items-center justify-center gap-y-5;
+}
+
+.project-container {
+  border: solid 1px #1D1D1D;
+  @apply list-none flex w-[100%] bg-dark-color-2;
+}
+
+.project-image-container {
+  @apply absolute top-0 right-0 left-0 h-28; 
+
+  @screen md {
+    @apply w-48 h-[100%] absolute bottom-0 left-auto;
+  }
+}
+
+.project-image-overlay-text {
+  @apply absolute flex top-0 bottom-0 left-0 right-0 items-center justify-center text-center font-jost text-desktopXl font-bold opacity-50;
+}
+
+.project-preview-image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.project-image-overlay {
+  @apply absolute top-0 bottom-0 left-0 right-0 opacity-5;
+}
+
+.project-details-container {
+  @apply h-fit px-5 py-6 w-[100%] mt-28;
+  @screen md {
+    @apply px-6 mt-0;
+    width: calc(100% - 192px);
+  }
+}
+
+.moiva-preview-overlay {
+  @apply bg-moiva-theme-color;
+}
+
+.moiva-preview-overlay-text {
+  @apply text-moiva-theme-color;
+}
+
+.project-title-container {
+  @apply flex gap-x-3 items-center pt-2;
+}
+
+.project-title-link-icon {
+  @apply flex w-fit h-fit items-center justify-center;
+}
+
+.project-title {
+  @apply font-josefin text-center text-mobileSm text-white-color-2 font-bold;
+  
+  @screen md {
+    @apply text-tabletSm;
+  }
+}
+
+.project-link {
+  @apply font-jost text-center text-nokiaSm text-white-color-5 font-normal underline cursor-pointer;
+
+  @screen md {
+    @apply text-mobileSm;
+  }
+}
+
+.project-links-container {
+  @apply flex gap-x-3 pb-1;
+}
+
+.project-description-container {
+  @apply py-2 pr-0;
+}
+
+.project-description {
+  @apply font-jost font-normal text-mobileXsm text-white-color-4;
+
+  @screen md {
+    @apply text-tabletXsm;
+  }
+}
+
+.project-tech-stack-container {
+  @apply flex pt-3 pb-2;
+}
+
+.project-tech-stack {
+  @apply relative;
+}
+
+.project-tech-stack-list {
+  @apply list-none flex gap-x-3;
+}
+
+.project-tech-stack-item {
+  @apply bg-dark-color-3 py-[6px] px-4 rounded-[4px] cursor-pointer hover:bg-dark-color-4; 
+}
+
+.project-tech-stack-item-text {
+  @apply font-jostHelventica font-normal text-mobileXsm text-white-color-4;
+}
+
+.projects-header-section {
+  @apply flex w-[100%] justify-between mb-4;
+}

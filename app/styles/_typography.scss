@@ -2,18 +2,14 @@
 
 h1 {
 	@apply font-jost text-start text-white-color-1 w-[100%]
-		font-extrabold text-nokiaLg leading-5; 
-
-	@screen sm {
-		@apply text-mobileLg leading-8;
-	}
+		font-extrabold text-mobileLg leading-8; 
 
 	@screen md {
-		@apply text-tabletXl leading-[44px];
+		@apply text-tabletXl leading-[42px];
 	}
 
 	@screen lg {
-		@apply text-desktopXl leading-[52px];
+		@apply text-desktopXl leading-[46px];
 	}
 }  
 

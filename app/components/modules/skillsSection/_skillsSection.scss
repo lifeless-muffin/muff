@@ -1,0 +1,10 @@
+.skills-section {
+  @apply w-[92%] h-fit max-w-3xl flex 
+  items-center justify-center flex-col;
+}
+
+.skills-header-section {
+  @apply flex w-[100%] 
+  justify-start mb-4;
+}
+

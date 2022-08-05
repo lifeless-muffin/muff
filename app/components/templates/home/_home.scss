@@ -1,3 +1,7 @@
 .home-page-content {
-  @apply w-[100%] h-fit flex justify-center;
+  @apply w-[100%] h-fit flex flex-col items-center gap-y-14;
+
+  @screen md {
+    @apply gap-y-20;
+  }
 }

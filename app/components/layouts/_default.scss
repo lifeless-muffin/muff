@@ -1,5 +1,5 @@
 .default-layout {
-  @apply w-[100%] h-fit pt-14 flex flex-col items-center justify-center;
+  @apply w-[100%] h-fit pt-14 flex flex-col items-center justify-center pb-10;
   
   @screen md {
     @apply mt-[79px] pt-24;

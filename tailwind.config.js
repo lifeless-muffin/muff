@@ -17,14 +17,18 @@ module.exports = {
       "white-color-2": "#BCBCBC",
       "white-color-3": "#A9A6A6",
       "white-color-4": "rgb(177, 177, 177)",
+      "white-color-5": "#8d8d8d",
 
       "dark-color-1": "#101110",
       "dark-color-2": "#131413",
       "dark-color-3": "#202120",
+      "dark-color-4": "#1D1D1D",
       
       "gray-color-1": "#242424",
       "gray-color-2": "#2B2C2B",
       
+      "moiva-theme-color": "#85977E",
+
       "yellow-color-1": "#E39600",
       "pink-color-1": "#EA4C89",
       "purple-color-1": "#8F48EB",

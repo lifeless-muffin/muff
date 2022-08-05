@@ -1,3 +1,15 @@
 .social-button {
-  @apply w-10 h-10 rounded-lg bg-none flex items-center justify-center opacity-75 hover:opacity-100;
+  @apply rounded-lg bg-gray-color-2 flex items-center justify-center 
+  opacity-75 p-2 bg-opacity-0 hover:bg-opacity-100 hover:opacity-100;
+}
+
+.social-button-content-container {
+  @apply w-fit h-fit;
+}
+
+.view-all-button-text {
+  @apply font-josefin text-right underline font-medium text-mobileSm text-white-color-3;
+  @screen md {
+    @apply text-tabletSm;
+  }
 }

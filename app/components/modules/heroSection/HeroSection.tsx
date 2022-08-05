@@ -2,7 +2,7 @@ import Link from "next/link";
 import SocialMediaButton from "../../elements/buttons/SocialMediaButton";
 import PrimaryHeading from "../../elements/headings/PrimaryHeading";
 import SectionHeading from "../../elements/headings/SectionHeading";
-import PrimaryParagraph from "../../elements/paragraphs/primaryParagraph";
+import PrimaryParagraph from "../../elements/paragraphs/PrimaryParagraph";
 
 const HeroSection = () => (
   <section className="hero-section">
@@ -21,7 +21,7 @@ const HeroSection = () => (
         <div className="hero-section-cta">
           <Link href="/">
             <button className="email-me-btn">
-              Email Me
+              Email Me  
             </button>
           </Link>
         </div>

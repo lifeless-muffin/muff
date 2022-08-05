@@ -11,14 +11,16 @@ export default function SocialMediaButton(props: Props) {
   return (
     <Link href={props.pushTo} target="_blank">
       <button className="social-button" >
-        <IconRenderer 
-          iconSource={props.source}
-          iconAlt={props.label}
-          iconSize={{
-            width: '24px',
-            height: '24px'
-          }}
-        />
+        <div className="social-button-content-container">
+          <IconRenderer 
+            iconSource={props.source}
+            iconAlt={props.label}
+            iconSize={{
+              width: '24px',
+              height: '24px'
+            }}
+          />
+        </div>
       </button>
     </Link>
   )
