@@ -18,6 +18,7 @@ module.exports = {
       "white-color-3": "#A9A6A6",
       "white-color-4": "rgb(177, 177, 177)",
       "white-color-5": "#8d8d8d",
+      "white-color-6": "#E2E2E2",
 
       "dark-color-1": "#101110",
       "dark-color-2": "#131413",
@@ -35,10 +36,11 @@ module.exports = {
       "blue-color-1": "#1DA1F2",
 
       "dim-yellow-color": "rgba(247, 223, 30, 0.1)",
-      "dim-blue-color": "rgba(97, 218, 251, 0.1)",
+      "dim-blue-color": "rgba(0, 122, 204, 0.1)",
       "dim-green-color": "rgba(83, 158, 67, 0.1)",
       "dim-red-color": "rgba(227, 79, 38, 0.1)",
-      "dim-cyan-color": "rgba(24, 186, 185, 0.1)", 
+      "dim-cyan-color": "rgba(97, 218, 251, 0.1);", 
+      "dim-cyan-color-2": "rgba(24, 186, 185, 0.1)",
     },
 
     fontFamily: {

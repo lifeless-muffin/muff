@@ -5,9 +5,9 @@ import SkillsSection from "../../modules/skillsSection/SkillsSection";
 
 const skillsList = [
   {
-    name: "Javascript",
+    name: "Typescript",
     experienceType: 'years',
-    iconSource: '/assets/skills/javascript-icon.svg',
+    iconSource: '/assets/skills/typescript-icon.svg',
     link: 'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/',
     experience: 2
   },
@@ -33,11 +33,11 @@ const skillsList = [
     experience: 2
   },
   {
-    name: "CSS",
+    name: "Tailwind",
     experienceType: 'years',
-    iconSource: '/assets/skills/css-icon.svg',
+    iconSource: '/assets/skills/tailwind-icon.svg',
     link: 'https://www.w3.org/TR/CSS',
-    experience: 2
+    experience: 1
   },
   {
     name: "Svelte",

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import IconRenderer from "../icons/IconRenderer"
+import IconRenderer from "../../elements/icons/IconRenderer"
 
 type ProjectProps = {
   projectDetails?: any
@@ -52,7 +52,7 @@ const Project = ({projectDetails, projectIndex}: ProjectProps) => {
                 />
               </div>
 
-              <h4 className="project-title">
+              <h4 className="project-title hover:underline">
                 {projectDetails?.full_name}
               </h4>
             </div>
@@ -63,7 +63,9 @@ const Project = ({projectDetails, projectIndex}: ProjectProps) => {
           <div className="project-links-container">
             <Link href={projectDetails.links?.github}>
               <a target="_blank">
-                <span className="project-link project-github-link">Github repository link</span>
+                <span className="project-link project-github-link">
+                  Github repository link
+                  </span>
               </a>
             </Link>
 

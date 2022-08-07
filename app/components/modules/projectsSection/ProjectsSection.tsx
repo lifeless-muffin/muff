@@ -1,6 +1,6 @@
 import ViewallButton from "../../elements/buttons/ViewallButton";
 import SectionHeading from "../../elements/headings/SectionHeading";
-import Project from "../../elements/projects/Project";
+import Project from "./Project";
 
 type Props = {
   projects: object[]
