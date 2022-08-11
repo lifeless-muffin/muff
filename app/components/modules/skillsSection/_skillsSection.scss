@@ -1,21 +1,17 @@
 .skills-section {
-  @apply w-[92%] h-fit max-w-3xl flex 
-  items-center justify-center flex-col;
+  @apply w-[92%] h-fit max-w-3xl flex items-center justify-center flex-col;
 }
 
 .skills-header-section {
-  @apply flex w-[100%] 
-  justify-start mb-4;
+  @apply flex w-[100%] justify-start mb-4;
 }
 
 .skills-section-list-container {
-  @apply w-[100%] h-fit flex 
-  items-center justify-center;
+  @apply w-[100%] h-fit flex items-center justify-center;
 }
 
 .skills-section-list {
-  @apply w-[100%] h-fit grid gap-3
-  grid-cols-2 auto-rows-auto;
+  @apply w-[100%] h-fit grid gap-3 grid-cols-2 auto-rows-auto;
 
   @screen md {
     @apply grid-cols-3 gap-5;
@@ -27,13 +23,11 @@
 }
 
 .skill-container {
-  @apply flex w-[100%] h-fit items-center rounded-md
-    gap-x-5 bg-dim-blue-color py-[14px] pl-[10%];
+  @apply flex w-[100%] h-fit items-center rounded-md gap-x-5 bg-dim-blue-color py-[14px] pl-[10%];
 }
 
 .skill-icon-container {
-  @apply w-10 h-fit items-center 
-    flex justify-center;
+  @apply w-10 h-fit items-center flex justify-center;
 
   @screen md {
     @apply w-12;
@@ -44,13 +38,14 @@
   @apply w-fit h-fit flex flex-col;
 }
 
-.skill-detail-name-container, .skill-detail-experience-container {
-  @apply w-fit h-fit; 
+.skill-detail-name-container,
+.skill-detail-experience-container {
+  @apply w-fit h-fit;
 }
 
-.skill-detail-name-text, .skill-detail-experience-text {
-  @apply text-white-color-1 text-left 
-  font-inter font-semibold text-nokiaXsm;
+.skill-detail-name-text,
+.skill-detail-experience-text {
+  @apply text-white-color-1 text-left font-inter font-semibold text-nokiaXsm;
 
   @screen md {
     @apply text-[16px];
@@ -83,4 +78,12 @@
 
 .svelte-skill-container {
   @apply bg-dim-red-color;
+}
+
+.nextjs-skill-container {
+  @apply bg-dim-gray-color;
+}
+
+.mongodb-skill-container {
+  @apply bg-dim-green-color;
 }

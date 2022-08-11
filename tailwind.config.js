@@ -41,6 +41,7 @@ module.exports = {
       "dim-red-color": "rgba(227, 79, 38, 0.1)",
       "dim-cyan-color": "rgba(97, 218, 251, 0.1);", 
       "dim-cyan-color-2": "rgba(24, 186, 185, 0.1)",
+      "dim-gray-color": "rgba(140, 154, 164, 0.1)",
     },
 
     fontFamily: {

@@ -1,0 +1,9 @@
+.contact-form-input-container {
+  @apply flex flex-col 
+    w-fit h-14;
+}
+
+.contact-form-input {
+  @apply w-[100%] h-[100%] 
+  bg-dark-color-3 border-solid border-dark-color-4;
+}
