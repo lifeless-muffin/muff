@@ -5,11 +5,11 @@ h1 {
 		font-extrabold text-mobileLg leading-8; 
 
 	@screen md {
-		@apply text-tabletXl leading-[42px];
+		@apply text-tabletXl leading-[44px];
 	}
 
 	@screen lg {
-		@apply text-desktopXl leading-[46px];
+		@apply text-tabletXl leading-[44px];
 	}
 }  
 

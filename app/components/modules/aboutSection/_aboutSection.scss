@@ -1,0 +1,50 @@
+.about-section {
+  @apply w-[92%] h-fit 
+  max-w-3xl flex items-center 
+  justify-center flex-col;
+}
+
+.about-header-section {
+  @apply flex w-[100%] 
+  justify-start mb-4;
+}
+
+.about-main-container {
+  @apply grid w-[100%] 
+  gap-y-6 h-fit;
+  
+  @screen md {
+    @apply gap-y-8;
+    
+    // grid-template-rows: none;
+    // grid-template-columns: 2fr 1fr;
+    // @apply gap-x-5;
+  }
+}
+
+.about-content-container {
+  @apply flex flex-row 
+    w-auto h-fit;
+}
+
+.about-content-paragraph {
+  @apply font-josefin text-nokiaXsm 
+  text-white-color-6 font-normal;
+
+  @screen md {
+    @apply text-tabletXsm;
+  }
+}
+
+.about-image-container {
+  @apply w-[100%] h-44;
+
+  @screen md {
+    @apply h-60;
+  }
+}
+
+.about-image {
+  @apply w-[100%] h-[100%] opacity-80
+    object-cover overflow-hidden;
+}
