@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../modules/footer/Footer'
 import Header from '../modules/header/Header'
 
 type Props = {
@@ -12,6 +13,7 @@ const Default = ({ children }: Props) => {
       <div className="default-layout">
         {children}
       </div>
+      <Footer />
     </div>
   )
 }

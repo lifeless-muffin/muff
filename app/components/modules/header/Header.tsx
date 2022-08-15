@@ -113,4 +113,6 @@ const Header = (props: any) => {
 
 Header.NavbarSection = NavbarSection;
 Header.LogoSection = LogoSection;
+
+export {LogoSection}
 export default Header;
