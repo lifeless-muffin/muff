@@ -11,10 +11,6 @@
     {
       "text": "Blog",
       "to": "/blog"
-    },
-    {
-      "text": "About",
-      "to": "/about"
     }
   ]
 }

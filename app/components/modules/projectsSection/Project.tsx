@@ -11,8 +11,8 @@ const ProjectStack = ({projectDetails}: any) => {
     <div className="project-tech-stack">
       <ul className="project-tech-stack-list">
         {projectDetails?.tech_stack?.map((item: any, index: number) => (
-          <Link href={item.link}>
-            <li className="project-tech-stack-item" key={index}>
+          <Link href={item.link} key={index}>
+            <li className="project-tech-stack-item">
                 <span className="project-tech-stack-item-text">
                   {item.name}
                 </span>

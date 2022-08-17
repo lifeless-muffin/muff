@@ -19,11 +19,13 @@ type NavbarLinkProps = {
 
 const NavbarLinkElement = ({to, text, currentPath}: NavbarLinkProps) => (
   <Link className="w-fit h-fit" href={to}>  
-    <div className={`navbar-link${currentPath === to ? ' navbar-link-active' : ''}`}>
-      <span className="navbar-link-text">
-        {text}
-      </span>
-    </div>
+    <a target="_blank">
+      <div className={`navbar-link${currentPath === to ? ' navbar-link-active' : ''}`}>
+        <span className="navbar-link-text">
+          {text}
+        </span>
+      </div>
+    </a>
   </Link>
 )
 

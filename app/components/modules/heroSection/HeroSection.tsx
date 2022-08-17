@@ -13,16 +13,18 @@ const HeroSection = () => (
       </div>
 
       <div className="hero-section-socials mt-8 flex gap-x-2">
-        <SocialMediaButton label="Github" source="/assets/social-icon-github.svg" pushTo="/" />
-        <SocialMediaButton label="Instagram" source="/assets/social-icon-instagram.svg" pushTo="/" />
-        <SocialMediaButton label="Twitter" source="/assets/social-icon-twitter.svg" pushTo="/github" />
-        <SocialMediaButton label="Dribbble" source="/assets/social-icon-dribbble.svg" pushTo="/github" />
+        <SocialMediaButton label="Github" source="/assets/social-icon-github.svg" pushTo="https://github.com/lifeless-muffin/" />
+        <SocialMediaButton label="Instagram" source="/assets/social-icon-instagram.svg" pushTo="https://www.instagram.com/drunkenpirate47xx/" />
+        <SocialMediaButton label="Twitter" source="/assets/social-icon-twitter.svg" pushTo="https://twitter.com/roeen_mansoor" />
+        <SocialMediaButton label="Dribbble" source="/assets/social-icon-dribbble.svg" pushTo="/" />
 
         <div className="hero-section-cta">
-          <Link href="/">
-            <button className="email-me-btn">
-              Email Me  
-            </button>
+          <Link href="mailto:mansoorroeen71@gmail.com">
+            <a target="_blank">
+              <button className="email-me-btn">
+                Email Me  
+              </button>
+            </a>
           </Link>
         </div>
         

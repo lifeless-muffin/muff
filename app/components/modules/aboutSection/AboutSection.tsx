@@ -7,7 +7,7 @@ export default function AboutSection (props: Props) {
   return (
     <section className="about-section">
       <div className="about-header-section">
-        <SectionHeading text="About me"/>
+        <SectionHeading text="More about me"/>
       </div>
 
       <div className="about-main-container">
@@ -17,9 +17,9 @@ export default function AboutSection (props: Props) {
 
         <div className="about-content-container">
           <p className="about-content-paragraph">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+            I enjoy designing and creating web applications, using modern web technologies.
+            My interest for web development, and coding in general started in 2018, and over the few years
+            I've learned a lot, and hope to continue learning, and creating.
           </p>
         </div>
 
