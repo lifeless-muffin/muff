@@ -29,7 +29,7 @@ const Project = ({projectDetails, projectIndex}: ProjectProps) => {
     <li className="project-container" key={projectDetails?.name || projectIndex}>
       <div className="project-image-container">
         <img className="project-preview-image" 
-          src={`/portfolio/assets/projects/${projectDetails?.name?.toLowerCase()}-preview.png`} 
+          src={`/muff/assets/projects/${projectDetails?.name?.toLowerCase()}-preview.png`} 
           alt={`${projectDetails?.name} Preview Image`} />
         <div className={`project-image-overlay ${projectDetails?.name?.toLowerCase()}-preview-overlay`}></div>
         <span className="project-image-overlay-text moiva-preview-overlay-text">
