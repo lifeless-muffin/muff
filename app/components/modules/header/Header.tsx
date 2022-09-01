@@ -4,13 +4,6 @@ import headerData from '../../../constants/header.json';
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react';
 
-
-type NavbarProps = {
-  isMobile: boolean, 
-  navbarState: boolean,
-  setNavbarState: any,
-}
-
 type NavbarLinkProps = {
   to: string,
   text: string,
@@ -19,7 +12,7 @@ type NavbarLinkProps = {
 
 const NavbarLinkElement = ({to, text, currentPath}: NavbarLinkProps) => (
   <Link className="w-fit h-fit" href={to}>  
-    <a target="_blank">
+    <a target="_self">
       <div className={`navbar-link${currentPath === to ? ' navbar-link-active' : ''}`}>
         <span className="navbar-link-text">
           {text}

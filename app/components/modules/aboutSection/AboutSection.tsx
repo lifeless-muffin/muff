@@ -1,18 +1,15 @@
 import SectionHeading from "../../elements/headings/SectionHeading";
 
-type Props = {
-}
-
-export default function AboutSection (props: Props) {
+export default function AboutSection() {
   return (
     <section className="about-section">
       <div className="about-header-section">
-        <SectionHeading text="More about me"/>
+        <SectionHeading text="More about me" />
       </div>
 
       <div className="about-main-container">
         <div className="about-image-container">
-          <img className="about-image" src="/assets/placeholder-image.jpg" />
+          <img className="about-image" src="/portfolio/assets/placeholder-image.jpg" />
         </div>
 
         <div className="about-content-container">

@@ -17,7 +17,7 @@ const IconRenderer = (props : Props) => {
     <div className="icon-img-wrapper">
       <img className="icon-img" 
         alt={iconAlt}
-        src={iconSource}
+        src={'/portfolio' + iconSource} 
         width={iconSize?.width}
         height={iconSize?.height}
         {...extraProps || ''}
