@@ -5,7 +5,7 @@
 
     // Change these to match your Repo URL and the js.org domain
     const gitRepo = "https://github.com/lifeless-muffin/muff"
-    const domainName = "muff.js.org"
+    const domainName = "muff.is-a.dev"
     const distPath = "next"
 
     // build
