@@ -23,6 +23,6 @@
 
     // Push the project to the gh-pages branch
     shell.exec(`git remote add origin ${gitRepo}`)
-    shell.exec('git push origin master:gh-pages -f')
+    shell.exec('git push origin main:gh-pages -f')
 
     shell.cd('-')
