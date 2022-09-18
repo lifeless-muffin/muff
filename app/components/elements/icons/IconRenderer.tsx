@@ -8,16 +8,16 @@ type Props = {
   extraProps?: object
 }
 
-const IconRenderer = (props : Props) => {
+const IconRenderer = (props: Props) => {
 
-  const { iconSource, iconSize, iconAlt, extraProps } 
+  const { iconSource, iconSize, iconAlt, extraProps }
     = props;
 
   return (
     <div className="icon-img-wrapper">
-      <img className="icon-img" 
+      <img className="icon-img"
         alt={iconAlt}
-        src={'/muff' + iconSource} 
+        src={iconSource}
         width={iconSize?.width}
         height={iconSize?.height}
         {...extraProps || ''}

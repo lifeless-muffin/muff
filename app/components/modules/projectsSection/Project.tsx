@@ -6,16 +6,16 @@ type ProjectProps = {
   projectIndex: number
 }
 
-const ProjectStack = ({projectDetails}: any) => {
+const ProjectStack = ({ projectDetails }: any) => {
   return (
     <div className="project-tech-stack">
       <ul className="project-tech-stack-list">
         {projectDetails?.tech_stack?.map((item: any, index: number) => (
           <Link href={item.link} key={index}>
             <li className="project-tech-stack-item">
-                <span className="project-tech-stack-item-text">
-                  {item.name}
-                </span>
+              <span className="project-tech-stack-item-text">
+                {item.name}
+              </span>
             </li>
           </Link>
         ))}
@@ -24,25 +24,25 @@ const ProjectStack = ({projectDetails}: any) => {
   )
 }
 
-const Project = ({projectDetails, projectIndex}: ProjectProps) => {
+const Project = ({ projectDetails, projectIndex }: ProjectProps) => {
   return (
     <li className="project-container" key={projectDetails?.name || projectIndex}>
       <div className="project-image-container">
-        <img className="project-preview-image" 
-          src={`/muff/assets/projects/${projectDetails?.name?.toLowerCase()}-preview.png`} 
+        <img className="project-preview-image"
+          src={`/assets/projects/${projectDetails?.name?.toLowerCase()}-preview.png`}
           alt={`${projectDetails?.name} Preview Image`} />
         <div className={`project-image-overlay ${projectDetails?.name?.toLowerCase()}-preview-overlay`}></div>
         <span className="project-image-overlay-text moiva-preview-overlay-text">
           {projectDetails?.name}
         </span>
       </div>
-      
+
       <div className="project-details-container">
         <Link href={projectDetails.links?.demo}>
           <a target="_blank">
             <div className="project-title-container cursor-pointer">
               <div className="project-title-link-icon">
-                <IconRenderer 
+                <IconRenderer
                   iconSource="/assets/link-icon.svg"
                   iconAlt="Link Icon"
                   iconSize={{
@@ -58,14 +58,14 @@ const Project = ({projectDetails, projectIndex}: ProjectProps) => {
             </div>
           </a>
         </Link>
-        
+
         {projectDetails.links?.github ? (
           <div className="project-links-container">
             <Link href={projectDetails.links?.github}>
               <a target="_blank">
                 <span className="project-link project-github-link">
                   Github repository link
-                  </span>
+                </span>
               </a>
             </Link>
 
@@ -75,7 +75,7 @@ const Project = ({projectDetails, projectIndex}: ProjectProps) => {
               </a>
             </Link>
           </div>
-        ): ''}
+        ) : ''}
 
         <div className="project-description-container">
           <p className="project-description">
@@ -84,7 +84,7 @@ const Project = ({projectDetails, projectIndex}: ProjectProps) => {
         </div>
 
         <div className="project-tech-stack-container">
-          {ProjectStack({projectDetails})}
+          {ProjectStack({ projectDetails })}
         </div>
       </div>
     </li>

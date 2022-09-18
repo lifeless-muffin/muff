@@ -9,7 +9,7 @@ export default function AboutSection() {
 
       <div className="about-main-container">
         <div className="about-image-container">
-          <img className="about-image" src="/muff/assets/placeholder-image.jpg" />
+          <img className="about-image" src="/assets/placeholder-image.jpg" alt="about me, hero image" />
         </div>
 
         <div className="about-content-container">
