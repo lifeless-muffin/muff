@@ -12,7 +12,7 @@ const PageHead = () => {
       <meta name="keywords" content="Mansoor Roeen, Mansoor, portfolio, blog, developer, freelancer, coder" />
       <meta name="author" content="Mansoor Roeen" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="twitter:card" content="/assets/placeholder-image.jpg" />
+      <meta name="twitter:card" content="https://ik.imagekit.io/4li8qjf08/placeholder-image_R68MFNAax.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663500739080" />
       <meta name="twitter:creator" content="@Mansoor Roeen" />
       <meta name="twitter:title" content="Personal Portfolio" />
       <meta name="twitter:description" content="I’m a web developer that likes to create web applications using the latest technology. I’m currently working as a freelance web developer." />
