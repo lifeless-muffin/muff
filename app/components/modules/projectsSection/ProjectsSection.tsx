@@ -3,22 +3,27 @@ import SectionHeading from "../../elements/headings/SectionHeading";
 import Project from "./Project";
 
 type Props = {
-  projects: object[]
+  projects: object[],
+  featured: boolean
 }
 
-export default function ProjectSection (props: Props) {
+export default function ProjectSection(props: Props) {
+
   const projectsList = props.projects;
+  const isFeatured = props.featured;
 
   return (
     <section className="projects-section">
-      <div className="projects-header-section">
-        <SectionHeading text="Featured projects"/>
-        <ViewallButton to="/projects" />
-      </div>
+      {isFeatured && (
+        <div className="projects-header-section">
+          <SectionHeading text="Featured projects" />
+          <ViewallButton to="/projects" />
+        </div>
+      )}
 
       <ul className="projects-list">
-        {projectsList.map((project, index) => 
-          <Project projectDetails={project} projectIndex={index} key={index} />)}  
+        {projectsList?.map((project, index) =>
+          <Project projectDetails={project} projectIndex={index} key={index} />)}
       </ul>
     </section>
   )

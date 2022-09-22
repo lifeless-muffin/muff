@@ -1,7 +1,6 @@
 import Link from "next/link";
 import SocialMediaButton from "../../elements/buttons/SocialMediaButton";
 import PrimaryHeading from "../../elements/headings/PrimaryHeading";
-import SectionHeading from "../../elements/headings/SectionHeading";
 import PrimaryParagraph from "../../elements/paragraphs/PrimaryParagraph";
 
 const HeroSection = () => (
